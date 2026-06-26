@@ -175,7 +175,7 @@ async function main(): Promise<void> {
 
   const startHandler: CommandHandler = async () => {
     return (
-      '💖 <b>Oi Mozoila e Princesa!</b>\n\n' +
+      '💖 <b>Oi, meus nenéns!</b>\n\n' +
       'Eu sou o monitor de ingressos da Sympla!\n' +
       'Fico de olho no show do Dubdogz 24/7 pra vocês.\n\n' +
       'Quando algum ingresso aparecer, eu aviso na hora! 🎟️\n\n' +
