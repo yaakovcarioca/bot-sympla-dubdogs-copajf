@@ -1,0 +1,34 @@
+{
+  "name": "sympla-ticket-monitor",
+  "version": "1.0.0",
+  "description": "Monitor de disponibilidade de ingressos na Sympla",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "check": "tsx src/main.ts --once",
+    "lint": "eslint src/",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.52.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/node-cron": "^3.0.11",
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.22.0"
+  }
+}

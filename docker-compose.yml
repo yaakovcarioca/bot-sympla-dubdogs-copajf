@@ -1,0 +1,16 @@
+services:
+  monitor:
+    build: .
+    container_name: sympla-ticket-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - NODE_ENV=production
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    mem_limit: 1g
+    memswap_limit: 1g
+    cpu_count: 2
